@@ -1,0 +1,40 @@
+﻿@{
+    
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+<form> 
+<div class="text-center">
+    <h4>Acessar Conta</h4>
+    <p>
+        Entre com suas credenciais de acesso para acessar
+        sua conta no sistema.
+    </p>
+    <hr />
+</div>
+
+<div class="mb-2">
+    <label>Email de acesso:</label>
+    <input type="text" class="form-control" 
+    placeholder="Ex:joaosilva@gmail.com" />
+</div>
+
+<div class="mb-2">
+    <label>Senha de acesso:</label>
+    <input type="password" class="form-control" />
+    <div class="mb-2 d-grid">
+        <input type="submit" value="Acessar conta"
+            class="btn btn-danger" />
+    </div>
+
+</div>
+
+
+    <div class="text-end">
+        <a href="/Account/Register">Não possui uma conta?</a>
+    </div>
+
+    <div class="text-end">
+        <a href="/Account/PasswordRecover">Esqueceu sua senha?</a>
+    </div>
+
+</form>
